@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <TargetFramework>net8.0-windows10.0.26100.0</TargetFramework>
 
     <Nullable>enable</Nullable>
 
@@ -27,7 +27,7 @@
 
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 
-    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+    <SupportedOSPlatformVersion>10.0.26100.0</SupportedOSPlatformVersion>
 
     <Version>1.0.1</Version>
   </PropertyGroup>
@@ -61,6 +61,10 @@
       <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
       <IncludeAssets>{ProjectName}.dll</IncludeAssets>
     </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Nerdbank.GitVersioning" Version="3.6.143" />
   </ItemGroup>
 
 </Project>
